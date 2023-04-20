@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: TextField(
                   controller: usuario,
                   decoration: const InputDecoration(
-                    icon: Icon(Icons.person_outline),
+                    icon: const Icon(Icons.person_outline),
                     labelText: 'Nombre',
                     hintText: 'Jesús Aldahir Hernández Yáñez',
                   ),
@@ -89,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: TextField(
                   controller: departamento,
                   decoration: const InputDecoration(
-                    icon: Icon(Icons.home_work),
+                    icon: const Icon(Icons.home_work),
                     labelText: 'Departamento',
                     hintText: 'Sistemas',
                   ),

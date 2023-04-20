@@ -49,7 +49,7 @@ class Gerente extends StatelessWidget {
           "\ud83d\udd34" +
           "Se Necesita con Urgencia a Sistemas" +
           "\ud83d\udd34";
-      var response1 = await http.get(Uri.parse(telegram));
+      //var response1 = await http.get(Uri.parse(telegram));
     } else if (prioridad == '2') {
       telegram = telegram +
           "\ud83d\udfe1" +
@@ -64,7 +64,7 @@ class Gerente extends StatelessWidget {
       var response1 = await http.get(Uri.parse(telegram));
     }
 
-    var response = await http.get(Uri.parse(url));
+    //var response = await http.get(Uri.parse(url));
   }
 
   @override
@@ -112,7 +112,7 @@ class Gerente extends StatelessWidget {
                   child: TextField(
                     controller: ubicacion,
                     decoration: const InputDecoration(
-                      icon: Icon(Icons.location_history_rounded),
+                      icon: const Icon(Icons.location_history_rounded),
                       labelText: 'Ubicación',
                       hintText: 'Lugar donde se encuentra',
 
@@ -178,11 +178,6 @@ class Gerente extends StatelessWidget {
             onPressed: () {
               gps = ubicacion.text;
               tabla(gps, '1');
-              const AlertDialog(
-                actions: [
-                  Text('Se acercara personal de sistemas inmediatamente')
-                ],
-              );
 
               //Navigator.push(BuildContext as BuildContext,
               //MaterialPageRoute(builder: (context) => const LoginPage()));
